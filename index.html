@@ -20,7 +20,8 @@
             <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="Hard Rock Solution">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="images/toggler-icon.svg" alt="">
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -32,7 +33,8 @@
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">Action 1</a>
                             <a class="dropdown-item" href="#">Action 2</a>
@@ -46,18 +48,23 @@
             <div class="search-bar col-md-6 mx-auto">
                 <h1 class="text-center">Lyrics Search</h1>
                 <div class="search-box my-5">
-                    <input type="text" class="form-control" placeholder="Enter your artist song name">
-                    <button class="btn btn-success search-btn">Search</button>
+                    <input id="song-name" type="text" class="form-control" placeholder="Enter your artist song name">
+                    <button id="search-button" class="btn btn-success search-btn">Search</button>
                 </div>
             </div>
             <!-- === Simple results === -->
             <div class="d-flex justify-content-center">
                 <div class="">
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
+                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button
+                            class="btn btn-success">Get Lyrics</button></p>
+                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button
+                            class="btn btn-success">Get Lyrics</button></p>
+                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button
+                            class="btn btn-success">Get Lyrics</button></p>
+                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button
+                            class="btn btn-success">Get Lyrics</button></p>
+                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button
+                            class="btn btn-success">Get Lyrics</button></p>
                 </div>
             </div>
             <!-- Single Lyrics -->
@@ -221,6 +228,14 @@
 
     <!-- Custom Script Here -->
 
+    <script>
+
+        // get song name 
+        document.getElementById('search-button').addEventListener('click', function () {
+            const songName = document.getElementById('song-name').value;
+            console.log(songName);
+        })
+    </script>
 </body>
 
 </html>
