@@ -39,4 +39,10 @@ body{
     border-radius: 15px;
 }
 
+.songDuration{
+    font-weight: bold;
+}
 
+.author{
+    font-weight: 400;
+}
